@@ -1,0 +1,1 @@
+;;; -*- mode: emacs-lisp; lexical-binding: t; -*-(when (fboundp 'scroll-bar-mode)  (scroll-bar-mode -1))(when (fboundp 'tool-bar-mode)  (tool-bar-mode -1))(if (and (eq system-type 'darwin) (display-graphic-p))    (menu-bar-mode 1)  (menu-bar-mode -1))(require 'package)(when (or (package-installed-p 'evil) (require 'evil nil t))  (evil-mode 1))
